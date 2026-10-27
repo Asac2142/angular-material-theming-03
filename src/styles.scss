@@ -1,4 +1,5 @@
 @use '@angular/material' as mat;
+@use 'theme-colors' as theme-colors;
 
 html {
   height: 100%;
@@ -26,4 +27,15 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+.theme-1 {
+  @include mat.theme(
+    (
+      color: (
+        primary: theme-colors.$primary-palette,
+        tertiary: theme-colors.$tertiary-palette
+      )
+    )
+  );
 }

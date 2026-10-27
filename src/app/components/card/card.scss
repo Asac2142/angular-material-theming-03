@@ -1,7 +1,7 @@
 :host {
   border-radius: var(--mat-sys-corner-medium);
   border: 1px solid var(--mat-sys-primary);
-  background-color: var(--mat-sys-primary-container);
+  background-color: var(--mat-sys-secondary-container);
   padding: 1rem;
   max-width: 50%;
   display: flex;
@@ -24,5 +24,15 @@
   h1,
   p {
     color: var(--mat-sys-on-primary-container);
+  }
+
+  .mdc-button {
+    background-color: var(--mat-sys-tertiary);
+    color: var(--mat-sys-on-tertiary);
+  }
+
+  .mat-mdc-unelevated-button {
+    background-color: var(--mat-sys-primary);
+    color: var(--mat-sys-on-primary);
   }
 }
